@@ -10,4 +10,5 @@ gem "webrick"
 
 group :development do
   gem "sinatra"
+  gem "sinatra-contrib"
 end
