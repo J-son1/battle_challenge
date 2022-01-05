@@ -9,19 +9,13 @@ get '/secret' do
   "hello again!"
 end
 
-get '/pod' do
-  "dolphins"
-end
-
-get '/raft' do
-  "otters"
-end
-
-get '/colony' do
-  "bats"
-end
-
-get '/cat' do
+get '/random-cat' do
   @name = %w(Amigo Misty Almond).sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
   erb(:index)
 end
