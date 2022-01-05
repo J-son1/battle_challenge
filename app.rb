@@ -22,5 +22,6 @@ get '/colony' do
 end
 
 get '/cat' do
+  @name = %w(Amigo Misty Almond).sample
   erb(:index)
 end
